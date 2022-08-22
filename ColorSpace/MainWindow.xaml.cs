@@ -38,27 +38,8 @@ namespace ColorSpace
             height = (int)image.Height;
 
             buffer = new byte[3 * width * height];
-            bitmap = new WriteableBitmap(width, height, 96, 96, PixelFormats.Rgb24, null);
-        }       
-
-        //private void UpdateBuffer()
-        //{
-        //    int ofs = 0;
-        //    Color c;
-        //    Random rnd = new Random();
-
-        //    for (var i = 0; i < width * height; i++)
-        //    {
-        //        c = Color.FromArgb((byte)rnd.Next(0, 255), (byte)rnd.Next(0, 255), (byte)rnd.Next(0, 255),
-        //                            (byte)rnd.Next(0, 255));
-
-        //        buffer[ofs++] = c.R;
-        //        buffer[ofs++] = c.G;
-        //        buffer[ofs++] = c.B;
-
-        //        colorList.Add(c);
-        //    }
-        //}
+            bitmap = new WriteableBitmap(width, height, 100, 100, PixelFormats.Rgb24, null);
+        } 
 
         private void FillRandomColorButton_Click(object sender, RoutedEventArgs e)
         {
